@@ -1,0 +1,260 @@
+/*Welcome Screen*/
+.cover {
+    z-index: 1;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: black;
+    animation-name: fadeOut;
+    animation-delay: 1.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+.welcomeText {
+    z-index: 1;
+    position: fixed;
+    top: 40%;
+    display: inline;
+    right: 25px;
+    left: 25px;
+    text-align: center;
+    animation-name: fadeOutText;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOutText {
+    from {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    to {
+        opacity: 0;
+        display: none;
+        transform: translateY(-65vh);
+    }
+}
+
+body {
+    font-family: "Open Sans";
+    background-color: #252526;
+    color: white
+}
+
+/*Hamburger Menu*/
+.hamMenu {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    overflow: auto;
+}
+.rect{
+    content: '';
+    background-color: black;
+    position: fixed;
+    height: 30vh;
+    width: 200px;
+    border-radius: 20px;
+}
+.logo {
+    pointer-events: none;
+    position: relative;
+    left: 35px;
+    top: 32px;
+    list-style-type: none;
+    position: fixed;
+    z-index: 1;
+}
+.menu{
+    position: fixed;
+    top: 50px;
+    list-style-type: none;
+}
+.menu li {
+    margin: 10px 5px 0 26.5px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {
+    width: 100%;
+}
+.openHam , .closeHam {
+    position:absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.openHam {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.closeHam {
+    top: 20px;
+    right: 20px;
+}
+.content {
+    margin-left: 200px;
+    padding: 0 10px;
+}
+#check {display: none;}
+/*Hamburger Menu and Mobile*/
+@media(max-width: 1000px){
+    body{
+        padding: 15px;
+    }
+    .content{
+        margin-left: 0px;
+    }
+    div.rect{
+        display: none;
+    }
+    .logo{
+        width: 0;
+        height: 0;
+        position: relative;
+        left: 0;
+        top: -5px;
+        padding: 0 15px;
+        background-color: black;
+    }
+    .hamMenu{
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        list-style-type: none;
+        width: 150px;
+        height: 210px;
+        opacity: 75%;
+        border-radius: 7.5%;
+        padding-top: -100px;
+        margin: 3% 5.5% 0 0;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin: 40% 5px -30px 0;
+        text-align: right;
+        position: relative;
+        top: 10px;
+        overflow: hidden;
+    }
+    .menu li a {
+        padding: 0 15px 0 0;
+    }
+    .menu li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: white;
+        transition: width 0.2s;
+    }
+    .menu li a:hover:after {
+        width: 83%;
+    }
+    .openHam , .closeHam {display: block;}
+    .openHam {
+        position: relative;
+        top: 15px;
+        left: 90%;
+        width: 0%;
+    }
+    .closeHam {
+        position: relative;
+        top: -148px;
+        right: -113px;
+    }
+    #check:checked ~ .menu {right: 0;}
+    #check:checked ~ .openHam {opacity: 0;}
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 0%;
+}
+
+h4 {
+    line-height: 0%;
+}
+
+.aboutme {
+    overflow: auto;
+}
+hr.aboutLine {
+    border-style:solid;
+}
+.pfp {
+    width: 165px;
+    float: left;
+    margin-right: 10px;
+}
+@media(max-width: 700px){
+    .pfp {
+        float: none;
+    }
+}
+
+hr.social {
+    border-color: red;
+    border-style:solid;
+}
+
+img.githubProfile {
+    filter: invert(1);
+    position: relative;
+    z-index: -1;
+}
+
+iframe.discord {
+    margin-top: 5px;
+}
+
+a {
+    color: rgb(254, 254, 120);
+}
+
+.pokemonpreview {
+    width: 350px;
+}
