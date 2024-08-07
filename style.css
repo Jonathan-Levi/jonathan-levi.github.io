@@ -135,6 +135,7 @@ body {
     }
     div.rect{
         display: none;
+        visibility: hidden;
     }
     .logo{
         width: 0;
@@ -155,7 +156,7 @@ body {
         align-items: flex-end;
         justify-content: flex-end;
         list-style-type: none;
-        width: 150px;
+        width: 200px;
         height: 210px;
         opacity: 75%;
         border-radius: 7.5%;
@@ -169,7 +170,7 @@ body {
         transition: all 0.2s ease-in-out;
     }
     .menu li {
-        margin: 40% 5px -30px 0;
+        margin: 30% 5px -30px 0;
         text-align: right;
         position: relative;
         top: 10px;
@@ -177,6 +178,9 @@ body {
     }
     .menu li a {
         padding: 0 15px 0 0;
+    }
+    .menu li a:hover {
+        color: rgb(254, 254, 120);
     }
     .menu li a::after {
         content: '';
@@ -189,19 +193,23 @@ body {
         transition: width 0.2s;
     }
     .menu li a:hover:after {
-        width: 83%;
+        display: none;
+        visibility: hidden;
     }
     .openHam , .closeHam {display: block;}
     .openHam {
         position: relative;
-        top: 15px;
+        margin-top: 10px;
+        top: 20px;
         left: 90%;
         width: 0%;
+        font-size: 30px;
     }
     .closeHam {
         position: relative;
-        top: -148px;
-        right: -113px;
+        top: -155px;
+        right: -80%;
+        font-size: 30px;
     }
     #check:checked ~ .menu {right: 0;}
     #check:checked ~ .openHam {opacity: 0;}
@@ -220,34 +228,50 @@ h4 {
     line-height: 0%;
 }
 
-.aboutme {
-    overflow: auto;
-}
+/*About Me*/
 hr.aboutLine {
     border-style:solid;
 }
+.aboutme {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
 .pfp {
     width: 165px;
-    float: left;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    vertical-align: middle;
 }
+.aboutmeheading {
+    line-height: 30px !important;
+    vertical-align: middle;
+}
+
+/*text location at bottom when the screen is smaller*/
 @media(max-width: 700px){
+    .aboutme{
+        display: inline;
+    }
     .pfp {
         float: none;
     }
+    .aboutmeheading {
+        line-height: 25px !important;
+        margin-bottom: 20px;
+    }
 }
 
+/*Social*/
 hr.social {
     border-color: red;
     border-style:solid;
 }
-
 img.githubProfile {
     filter: invert(1);
     position: relative;
     z-index: -1;
 }
-
 iframe.discord {
     margin-top: 5px;
 }
@@ -256,6 +280,22 @@ a {
     color: rgb(254, 254, 120);
 }
 
+/*Bootstrap Card*/
+.card{
+    margin-bottom: 20px;
+}
+.card-header {
+    font-weight: bold;
+    font-size: 20px;
+    border-color: white;
+}
+.card-footer {
+    border-color: white;
+}
+
 .projectpreview {
     width: 350px;
+}
+.notes {
+    color: gray;
 }
