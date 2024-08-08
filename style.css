@@ -47,7 +47,8 @@
 body {
     font-family: "Open Sans";
     background-color: #252526;
-    color: white
+    color: white;
+    padding: 10px;
 }
 
 /*Hamburger Menu*/
@@ -126,7 +127,7 @@ body {
 }
 #check {display: none;}
 /*Hamburger Menu and Mobile*/
-@media(max-width: 1000px){
+@media(max-width: 768px){
     body{
         padding: 15px;
     }
@@ -217,15 +218,12 @@ body {
 
 h1 {
     font-size: 25px;
+    font-weight: bold;
 }
-
 h2 {
     font-size: 20px;
     line-height: 0%;
-}
-
-h4 {
-    line-height: 0%;
+    font-weight: bold;
 }
 
 /*About Me*/
@@ -246,20 +244,6 @@ hr.aboutLine {
 .aboutmeheading {
     line-height: 30px !important;
     vertical-align: middle;
-}
-
-/*text location at bottom when the screen is smaller*/
-@media(max-width: 700px){
-    .aboutme{
-        display: inline;
-    }
-    .pfp {
-        float: none;
-    }
-    .aboutmeheading {
-        line-height: 25px !important;
-        margin-bottom: 20px;
-    }
 }
 
 /*Social*/
