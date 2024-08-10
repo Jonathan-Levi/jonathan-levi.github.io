@@ -6,7 +6,7 @@
 > **JURUSAN:** TEKNIK INFORMATIKA (IF)  
 
 # Cara Kerja
-Ketik "[jonathan-levi.github.io](https://jonathan-levi.github.io/)" pada kolom pencarian di *browser*, atau klik link-nya. Untuk mengunjungi halaman lainnya:
+Ketik <a href="https://jonathan-levi.github.io" target=_blank>"jonathan-levi.github.io"</a> pada kolom pencarian di *browser*, atau klik link-nya. Untuk mengunjungi halaman lainnya:
 >- ***Mobile***: tekan *hamburger menu* (≡) pada bagian kanan atas website, lalu pilih halaman yang diinginkan.
 > - **PC/Laptop/Tablet**: pilih halaman pada bagian kiri website yang diinginkan.
 
