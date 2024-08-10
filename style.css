@@ -126,7 +126,7 @@ body {
     padding: 0 10px;
 }
 #check {display: none;}
-/*Hamburger Menu and Mobile*/
+/*Hamburger Menu in Mobile; Mobile View*/
 @media(max-width: 768px){
     body{
         padding: 15px;
@@ -264,7 +264,7 @@ a {
     color: rgb(254, 254, 120);
 }
 
-/*Bootstrap Card*/
+/*Projects; Bootstrap Card*/
 .card{
     margin-bottom: 20px;
 }
@@ -276,7 +276,6 @@ a {
 .card-footer {
     border-color: white;
 }
-
 .projectpreview {
     width: 350px;
 }
