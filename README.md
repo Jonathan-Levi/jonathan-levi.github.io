@@ -1,4 +1,4 @@
-Project ini merupakan website portofolio Jonathan Levi (19623013). Website ini menggunakan HTML, CSS dan framework CSS, yaitu Bootstrap, dan dipublikasi pada GitHub Pages (github.io).
+*Project* ini merupakan website portofolio Jonathan Levi (19623013). Website ini menggunakan HTML, CSS dan framework CSS, yaitu Bootstrap, dan dipublikasi pada GitHub Pages (github.io).
 
 # Identitas
 > **NAMA:** Jonathan Levi  
